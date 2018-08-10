@@ -596,7 +596,7 @@ form input {
   border: none;
   border-bottom: 3px solid gray;
   margin: 20px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 textarea {
