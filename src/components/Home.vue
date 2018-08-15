@@ -96,35 +96,39 @@
                 <p>Ozzy is a parenting application designed to help parents and care providers connect and communicate. It was
                     designed as a personal project during my time at Dev Mountain. It is one of my larger projects and won
                     the award for "Best Overall App".</p>
-                <router-link to="/ozzy/app" class="link">
-                    <button>Read More
-                        <i class="fa fa-angle-double-right"></i>
-                    </button>
-                </router-link>
+                <!-- <router-link to="/ozzy/app" class="link"> -->
+                    <a href="https://ozzy.site" target="_blank">Live Site
+                        <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+                    </a>
+                    <a href="https://github.com/ErinHales/ozzy" target="_blank">GitHub Repo
+                        <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+                    </a>
+                <!-- </router-link> -->
             </div>
             <div class="project">
                 <img src="http://i63.tinypic.com/iqvj49.jpg" alt="">
                 <p>This is a calendar application also built during Dev Mountain. It was a very technical piece. Because of
                     the way we measure time, I had to create a lot of algorithms to display the dates correctly and to make
                     events show up in the right spot.</p>
-                <router-link to="/calendar/app" class="link">
-                    <button>Read More
-                        <i class="fas fa-angle-double-right"></i>
-                    </button>
-                </router-link>
+                <!-- <router-link to="/calendar/app" class="link"> -->
+                    <a href="https://github.com/ErinHales/new-calendar-app" target="_blank">GitHub Repo
+                        <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+                    </a>
+                <!-- </router-link> -->
             </div>
             <div class="project">
                 <img src="http://i63.tinypic.com/bfnxv4.jpg" alt="">
                 <p>This weather app was built as part of the Free Code Camp curriculum. I built it on my own after 2 months
                     of studying code in my free time. It uses the Open Weather API and gives the current weather as well
                     as a three day forecast.</p>
-                <router-link to="/weather/app" class="link">
-                    <button>Read More
-                        <i class="fas fa-angle-double-right"></i>
-                    </button>
-                </router-link>
+                <!-- <router-link to="/weather/app" class="link"> -->
+                    <a href="https://codepen.io/mcbridee093/pen/yKPaRN" target="_blank">View Project in Codepen
+                      <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+                    </a>
+                <!-- </router-link> -->
             </div>
         </div>
+        <h2 class="contactText">Let's get in touch.</h2>
         <form id="contact">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
@@ -562,7 +566,8 @@ p {
   text-align: center;
 }
 
-.project button {
+.project a {
+  text-decoration: none;
   background-color: #044252;
   color: white;
   font-size: 20px;
@@ -614,11 +619,19 @@ form button {
   margin: 20px;
 }
 
-#projectsHeader {
+#projectsHeader,
+.contactText {
   font-size: 40px;
   text-align: center;
   margin-top: 100px;
 }
+
+#arrowImg {
+  width: 15px;
+  height: 15px;
+}
+
+
 
 @keyframes bounce {
   70% {

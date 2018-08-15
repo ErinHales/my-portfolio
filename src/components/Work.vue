@@ -4,11 +4,9 @@
             <img src="http://i64.tinypic.com/s5cz1c.jpg" alt="">
         </div>
         <div class="content">
-            <p>alksdfa;lsdgh;agoa sijfaso;id fja;slkdfj; lask jdf;lasjd fl;kasd jfs df k jsoi ajf;asd jf;lkasjdf dsflf;iasjdf;oisjdflksdjf
-                    sdfljas s ;s laksj sd las klsd fkasldjf aslkd ;alsdkfj aslkdjfl;askjfa ;asdkf as f;sfl aslk;f flas fl;l;as
-                    fasd f;alksdfj a;ls f f f;lkasd f sdfl; sflk asdfl ;lf ;af adf af asdf as; f asfdas df;ls fkls fkls f
-                    sf s;dfkl sdf asdf as df;lkasj fasdf s df sdf ;sadlkf ;lskdf k sf asd flk;dsaf ;laksdjfl aksdf;lk sdf
-                    jals;kd fj;sf sfk as f sdfj sfkl; jas </p>
+            <p>Up until recently, I had always wanted to be a teacher.  When I was attending college at Western State Colorado university, I studied music education, and I worked at the Stepping Stones day care center.  I later was given the opportunity to teach my own preschool classes of 3 and 4 year-olds.  This was a lot of work!  I had between 9 and 14 kids in each class.  I made my own lesson plans, emailed parents, evaluated kids and their progress, cleaned my classroom, and much more.  While I enjoyed the kids, I found that I didn't enjoy the work.  It was long hours and poor pay.</p>
+            <p>After I quit that job, I became a nanny for the Allen family.  I loved this job and the family.  I worked really hard over the two years that I was there, but I realized that it wasn't a carrer.</p>
+            <p>It was then that I discovered programming.  I began by taking some online courses and found that I loved it.  I am really excited to get into this new line of work, and I really believe that it will be a rewarding, lucrative, and enjoyable field.</p>
         </div>
         <router-link to="/"><button class="back">Back</button></router-link>
         <router-view></router-view>
@@ -18,6 +16,9 @@
 <script>
 export default {
     name: 'Work',
+    mounted() {
+        window.scrollTo(0, 0);
+    },
     data () {
         return {
             msg: 'Work Component'
@@ -27,6 +28,10 @@ export default {
 </script>
 
 <style>
+button {
+    outline: none;
+}
+
 .workPage {
     width: 100%;
     min-height: 100vh;

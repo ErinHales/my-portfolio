@@ -24,13 +24,17 @@
 export default {
   name: "Journey",
   mounted () {
-    console.log('Journey component mounted successfully')
+    window.scrollTo(0, 0);
   }
 };
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+button {
+  outline: none;
+}
 
 .journey {
   width: 100%;
@@ -68,6 +72,12 @@ export default {
   font-size: 30px;
   color: white;
   padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .content {
+        width: 90%;
+    }
 }
 
 </style>
