@@ -97,12 +97,13 @@
                     designed as a personal project during my time at Dev Mountain. It is one of my larger projects and won
                     the award for "Best Overall App".</p>
                 <!-- <router-link to="/ozzy/app" class="link"> -->
-                    <a href="https://ozzy.site" target="_blank">Live Site
+                    <button><a href="https://ozzy.site" target="_blank">Live Site
                         <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a>
-                    <a href="https://github.com/ErinHales/ozzy" target="_blank">GitHub Repo
+                    </a></button>
+                    <button><a href="https://github.com/ErinHales/ozzy" target="_blank">GitHub Repo
                         <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a>
+                    </a></button>
+                    <button><a href="" target="_blank">Prototype in Figma <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow"></a></button>
                 <!-- </router-link> -->
             </div>
             <div class="project">
@@ -111,9 +112,18 @@
                     the way we measure time, I had to create a lot of algorithms to display the dates correctly and to make
                     events show up in the right spot.</p>
                 <!-- <router-link to="/calendar/app" class="link"> -->
-                    <a href="https://github.com/ErinHales/new-calendar-app" target="_blank">GitHub Repo
+                    <button><a href="https://github.com/ErinHales/new-calendar-app" target="_blank">GitHub Repo
                         <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a>
+                    </a></button>
+                <!-- </router-link> -->
+            </div>
+            <div class="project">
+                <img src="http://i64.tinypic.com/5nm5ig.jpg" alt="">
+                <p>This portfolio site was built with Vue to show my flexibility in working with different frameworks.  Although I primarily work with React, I am open and able to learn new technologies.</p>
+                <!-- <router-link to="/weather/app" class="link"> -->
+                    <button><a href="https://github.com/ErinHales/vue-portfolio" target="_blank">GitHub Repo
+                      <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+                    </a></button>
                 <!-- </router-link> -->
             </div>
             <div class="project">
@@ -122,13 +132,13 @@
                     of studying code in my free time. It uses the Open Weather API and gives the current weather as well
                     as a three day forecast.</p>
                 <!-- <router-link to="/weather/app" class="link"> -->
-                    <a href="https://codepen.io/mcbridee093/pen/yKPaRN" target="_blank">View Project in Codepen
+                    <button><a href="https://codepen.io/mcbridee093/pen/yKPaRN" target="_blank">View Project in Codepen
                       <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a>
+                    </a></button>
                 <!-- </router-link> -->
             </div>
         </div>
-        <h2 class="contactText">Let's get in touch.</h2>
+        <!-- <h2 class="contactText">Let's get in touch.</h2>
         <form id="contact">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Email">
@@ -138,7 +148,13 @@
                 <button>Clear</button>
                 <button>Send</button>
             </div>
-        </form>
+        </form> -->
+        <div class="externalLinks">
+          <a href="https://github.com/ErinHales" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github"></a>
+          <a href="https://www.linkedin.com/in/erin-hales-64122a15b/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linked in"></a>
+          <a href="https://codepen.io/mcbridee093/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="codepen"></a>
+          <a href="https://www.freecodecamp.org/fcc42d7bce8-1718-48bf-8f8f-4d568b10ef71" target="_blank"><img src="https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png" alt="free code camp"></a>
+        </div>
     </div>
     <router-view></router-view>
 </div>
@@ -147,6 +163,7 @@
 <script>
 import Vue from "vue";
 import VueScrollTo from "vue-scrollto";
+// import nodemailer from 'nodemailer';
 Vue.use(VueScrollTo);
 
 export default {
@@ -566,13 +583,17 @@ p {
   text-align: center;
 }
 
-.project a {
-  text-decoration: none;
+.project button {
   background-color: #044252;
-  color: white;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   padding: 10px;
+  margin: 5px;
+}
+
+.project a {
+  color: white;
+  text-decoration: none;
 }
 
 .project p {
@@ -627,10 +648,24 @@ form button {
 }
 
 #arrowImg {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 
+.externalLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.externalLinks img {
+  width: 80px;
+  margin: 50px;
+}
+
+.externalLinks img:hover {
+  cursor: pointer;
+}
 
 
 @keyframes bounce {
