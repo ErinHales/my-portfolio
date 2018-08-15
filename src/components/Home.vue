@@ -118,7 +118,7 @@
                 <!-- </router-link> -->
             </div>
             <div class="project">
-                <img src="http://i64.tinypic.com/5nm5ig.jpg" alt="">
+                <img src="https://github.com/ErinHales/my-portfolio" alt="">
                 <p>This portfolio site was built with Vue to show my flexibility in working with different frameworks.  Although I primarily work with React, I am open and able to learn new technologies.</p>
                 <!-- <router-link to="/weather/app" class="link"> -->
                     <button><a href="https://github.com/ErinHales/vue-portfolio" target="_blank">GitHub Repo
