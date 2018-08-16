@@ -713,6 +713,10 @@ form button {
   textarea {
     width: 80%;
   }
+  .externalLinks img {
+    width: 60px;
+    margin: 30px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -754,6 +758,7 @@ form button {
   .project {
     width: 300px;
   }
+  
 }
 
 @media (max-width: 540px) {
@@ -768,6 +773,10 @@ form button {
   }
   .project {
     width: 250px;
+  }
+  .externalLinks img {
+    width: 40px;
+    margin: 20px;
   }
 }
 </style>
