@@ -8,7 +8,6 @@ import OzzyApp from '@/components/OzzyApp'
 import CalendarApp from '@/components/CalendarApp'
 import WeatherApp from '@/components/WeatherApp'
 
-
 Vue.use(Router)
 
 export default new Router({
@@ -47,6 +46,6 @@ export default new Router({
       path: '/weather/app',
       name: 'WeatherApp',
       component: WeatherApp
-    },
+    }
   ]
 })

@@ -5,206 +5,242 @@
         crossorigin="anonymous">
     <div id="homePage">
         <!-- <img class="homePageImg parallax-window" src="http://i67.tinypic.com/4uymbs.jpg" alt=""> -->
-        <div class="homePageImg"></div>
-        <div class="nav">
-            <h3>Erin</h3>
-            <div class="navButtons">
-                <img src="http://i65.tinypic.com/2d7widc.jpg" alt="" @click='toggleNav'>
-                <a href="#" v-scroll-to="{element: '#homePage', duration: 2000}" @click='closeNav'><h3>home</h3></a>
-                <a href="#" v-scroll-to="{element: '#about', duration: 2000}" @click='closeNav'><h3>about</h3></a>
-                <a href="#" v-scroll-to="{element: '#skills', duration: 2000}" @click='closeNav'><h3>skills</h3></a>
-                <a href="#" v-scroll-to="{element: '#projects', duration: 2000}" @click='closeNav'><h3>projects</h3></a>
-                <a href="#" v-scroll-to="{element: '#contact', duration: 2000}" @click='closeNav'><h3>contact</h3></a>
-            </div>
+      <div class="homePageImg"></div>
+      <div class="nav">
+        <h3>Erin</h3>
+        <div class="navButtons">
+          <img src="http://i65.tinypic.com/2d7widc.jpg" alt="" @click='toggleNav'>
+          <a href="#" v-scroll-to="{element: '#homePage', duration: 2000}" @click='closeNav'><h3>home</h3></a>
+          <a href="#" v-scroll-to="{element: '#projects', duration: 2000}"         @click='closeNav'><h3>projects</h3></a>
+          <a href="#" v-scroll-to="{element: '#skills', duration: 2000}" @click='closeNav'><h3>skills</h3></a>
+          <a href="#" v-scroll-to="{element: '#about', duration: 2000}" @click='closeNav'><h3>about</h3></a>
+          <a href="#" v-scroll-to="{element: '#contactText', duration: 2000}" @click='closeNav'><h3>contact</h3></a>
         </div>
-        <div class="homeContainer">
-            <div id="home">
-                <div class="left">
-                    <div class="right">
-                        <div class="center">
-                            <h1>Erin Hales</h1>
-                            <h3>Web Developer</h3>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="homeContainer">
+        <div id="home">
+          <div class="left">
+            <div class="right">
+              <div class="center">
+                <h1>Erin Hales</h1>
+                <h3>Web Developer</h3>
+              </div>
             </div>
+          </div>
         </div>
-        <img class="down" src="http://i64.tinypic.com/1rcb2q.jpg" alt="">
+      </div>
+      <img class="down" src="http://i64.tinypic.com/1rcb2q.jpg" alt="">
     </div>
-    <div id="about">
-        <!-- <img src="http://i67.tinypic.com/1o0upf.jpg" alt=""> -->
-        <div class="blogs">
-            <router-link to="/about" class="link" @click='resetScroll'><div>
-                <img src="http://i67.tinypic.com/2cekeab.jpg" alt="About Me" />
-                <h2>About Me</h2>
-            </div></router-link>
-            <router-link to="/journey" class="link" @click='resetScroll'><div>
-                <img src="http://i65.tinypic.com/t7l7gz.jpg" alt="Web Development" />
-                <h2>My Journey
-                    <br/> to Web Development</h2>
-            </div></router-link>
-            <router-link to="/work" class="link" @click='resetScroll'><div>
-                <img src="http://i64.tinypic.com/s5cz1c.jpg" alt="work" />
-                <h2>Work Experience</h2>
-            </div></router-link>
-        </div>
-        <div id="skills">
-            <h2>Skills</h2>
-            <div class="skillsContainer">
-                <div class="skill">
-                    <img src="http://i67.tinypic.com/1674j2r.jpg" alt="">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i67.tinypic.com/15dmatz.jpg" alt="">
-                    <h3>HTML</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i67.tinypic.com/1zc1pnc.jpg" alt="">
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i64.tinypic.com/2myq2c4.jpg" alt="">
-                    <h3>React</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i65.tinypic.com/2chm4i9.jpg" alt="">
-                    <h3>jQuery</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i66.tinypic.com/2d9xr35.jpg" alt="">
-                    <h3>SQL</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i64.tinypic.com/fvcsjs.jpg" alt="">
-                    <h3>nodeJS</h3>
-                </div>
-                <div class="skill">
-                    <img src="https://vuejsexamples.com/content/images/2017/10/vuejsexamples.png" alt="">
-                    <h3>Vue</h3>
-                </div>
-                <div class="skill">
-                    <img src="http://i65.tinypic.com/2nro8b8.jpg" alt="">
-                    <h3>Angular</h3>
-                </div>
-            </div>
-        </div>
-        <h2 id="projectsHeader">Projects</h2>
-        <div id="projects">
-            <div class="project">
-                <img src="http://i65.tinypic.com/1sh5ip.jpg" alt="">
-                <p>Ozzy is a parenting application designed to help parents and care providers connect and communicate. It was
-                    designed as a personal project during my time at Dev Mountain. It is one of my larger projects and won
-                    the award for "Best Overall App".</p>
+    <h2 id="projectsHeader">Projects</h2>
+    <div id="projects">
+      <div class="project">
+        <img src="http://i65.tinypic.com/1sh5ip.jpg" alt="">
+        <p>Ozzy is a parenting application designed to help parents and care providers connect and communicate. It was designed as a personal project during my time at Dev Mountain and won the award for "Best Overall App".</p>
                 <!-- <router-link to="/ozzy/app" class="link"> -->
-                    <button><a href="https://ozzy.site" target="_blank">Live Site
-                        <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a></button>
-                    <button><a href="https://github.com/ErinHales/ozzy" target="_blank">GitHub Repo
-                        <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a></button>
-                    <button><a href="" target="_blank">Prototype in Figma <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow"></a></button>
+        <button><a href="https://ozzy.site" target="_blank">Live Site
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
+        <button><a href="https://github.com/ErinHales/ozzy" target="_blank">GitHub Repo
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
+        <button><a href="https://www.figma.com/proto/Q236qFIh1cvSLVdEOZ5ahsZl/Ozzy-posts?node-id=14%3A21&scaling=min-zoom" target="_blank">Prototype in Figma <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow"></a></button>
                 <!-- </router-link> -->
-            </div>
-            <div class="project">
-                <img src="http://i63.tinypic.com/iqvj49.jpg" alt="">
-                <p>This is a calendar application also built during Dev Mountain. It was a very technical piece. Because of
+      </div>
+      <!-- <div class="project">
+        <img src="http://i63.tinypic.com/iqvj49.jpg" alt="">
+        <p>This is a calendar application also built during Dev Mountain. It was a very technical piece. Because of
                     the way we measure time, I had to create a lot of algorithms to display the dates correctly and to make
                     events show up in the right spot.</p>
-                <!-- <router-link to="/calendar/app" class="link"> -->
-                    <button><a href="https://github.com/ErinHales/new-calendar-app" target="_blank">GitHub Repo
-                        <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a></button>
-                <!-- </router-link> -->
-            </div>
-            <div class="project">
-                <img src="http://i64.tinypic.com/5nm5ig.jpg" alt="">
-                <p>This portfolio site was built with Vue to show my flexibility in working with different frameworks.  Although I primarily work with React, I am open and able to learn new technologies.</p>
-                <!-- <router-link to="/weather/app" class="link"> -->
-                    <button><a href="https://github.com/ErinHales/my-portfolio" target="_blank">GitHub Repo
-                      <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a></button>
-                <!-- </router-link> -->
-            </div>
-            <div class="project">
-                <img src="http://i63.tinypic.com/bfnxv4.jpg" alt="">
-                <p>This weather app was built as part of the Free Code Camp curriculum. I built it on my own after 2 months
+                <router-link to="/calendar/app" class="link">
+        <button><a href="https://github.com/ErinHales/new-calendar-app" target="_blank">GitHub Repo
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
+                </router-link>
+      </div> -->
+      <!-- <div class="project">
+        <img src="http://i64.tinypic.com/5nm5ig.jpg" alt="">
+        <p>This portfolio site was built with Vue to show my flexibility in working with different frameworks.  Although I primarily work with React, I am open and able to learn new technologies.</p>
+                <router-link to="/weather/app" class="link">
+        <button><a href="https://github.com/ErinHales/my-portfolio" target="_blank">GitHub Repo
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
+                </router-link>
+      </div> -->
+      <!-- <div class="project">
+        <img src="http://i63.tinypic.com/bfnxv4.jpg" alt="">
+        <p>This weather app was built as part of the Free Code Camp curriculum. I built it on my own after 2 months
                     of studying code in my free time. It uses the Open Weather API and gives the current weather as well
                     as a three day forecast.</p>
+                <router-link to="/weather/app" class="link">
+        <button><a href="https://codepen.io/mcbridee093/pen/yKPaRN" target="_blank">View Project in Codepen
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
+                </router-link>
+      </div> -->
+      <div class="project">
+        <img src="http://i67.tinypic.com/jsinuo.jpg" alt="">
+        <p>This clone of Codepen.io was built as a group project over the course of three weeks.  It is a platform that allows developers to create and share coding projects called "pens" using an inbrowser code editor.</p>
                 <!-- <router-link to="/weather/app" class="link"> -->
-                    <button><a href="https://codepen.io/mcbridee093/pen/yKPaRN" target="_blank">View Project in Codepen
-                      <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
-                    </a></button>
+        <button><a href="https://www.clonepen.com" target="_blank">Live Site
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
+        <button><a href="https://github.com/ErinHales/codepen-clone" target="_blank">GitHub Repo
+          <img id="arrowImg" src="http://i68.tinypic.com/mh810p.jpg" alt="arrow">
+        </a></button>
                 <!-- </router-link> -->
-            </div>
+      </div>
+    </div>
+    <div id="skills">
+      <h2>Skills</h2>
+      <div class="skillsContainer">
+        <div class="skill">
+          <img src="http://i67.tinypic.com/1674j2r.jpg" alt="">
+          <h3>JavaScript</h3>
         </div>
-        <!-- <h2 class="contactText">Let's get in touch.</h2>
-        <form id="contact">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <div class="skill">
+          <img src="http://i67.tinypic.com/15dmatz.jpg" alt="">
+          <h3>HTML</h3>
+        </div>
+        <div class="skill">
+          <img src="http://i67.tinypic.com/1zc1pnc.jpg" alt="">
+          <h3>CSS</h3>
+        </div>
+        <div class="skill">
+          <img src="http://i64.tinypic.com/2myq2c4.jpg" alt="">
+          <h3>React</h3>
+        </div>
+        <div class="skill">
+          <img src="http://i65.tinypic.com/2chm4i9.jpg" alt="">
+          <h3>jQuery</h3>
+        </div>
+        <div class="skill">
+          <img src="http://i66.tinypic.com/2d9xr35.jpg" alt="">
+          <h3>SQL</h3>
+        </div>
+        <div class="skill">
+          <img src="http://i64.tinypic.com/fvcsjs.jpg" alt="">
+          <h3>nodeJS</h3>
+        </div>
+        <div class="skill">
+          <img src="https://vuejsexamples.com/content/images/2017/10/vuejsexamples.png" alt="">
+          <h3>Vue</h3>
+        </div>
+        <div class="skill">
+          <img src="http://i65.tinypic.com/2nro8b8.jpg" alt="">
+          <h3>Angular</h3>
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <div id="about">
+        <!-- <img src="http://i67.tinypic.com/1o0upf.jpg" alt=""> -->
+        <div class="blogs">
+          <router-link to="/journey" class="link" @click='resetScroll'>
             <div>
-                <button>Clear</button>
-                <button>Send</button>
+              <img src="http://i65.tinypic.com/t7l7gz.jpg" alt="Web Development" />
+              <h2>My Journey
+              <br/> to Web Development</h2>
             </div>
-        </form> -->
-        <div class="externalLinks">
-          <a href="https://github.com/ErinHales" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github"></a>
-          <a href="https://www.linkedin.com/in/erin-hales-64122a15b/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linked in"></a>
-          <a href="https://codepen.io/mcbridee093/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="codepen"></a>
-          <a href="https://www.freecodecamp.org/fcc42d7bce8-1718-48bf-8f8f-4d568b10ef71" target="_blank"><img src="https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png" alt="free code camp"></a>
+          </router-link>
+          <router-link to="/about" class="link" @click='resetScroll'>
+            <div>
+              <img src="http://i67.tinypic.com/2cekeab.jpg" alt="About Me" />
+              <h2>About Me</h2>
+            </div>
+          </router-link>
+          <router-link to="/work" class="link" @click='resetScroll'>
+            <div>
+              <img src="http://i64.tinypic.com/s5cz1c.jpg" alt="work" />
+              <h2>Work Experience</h2>
+            </div>
+          </router-link>
         </div>
+      </div>
+      <h2 id="contactText">Let's get in touch.</h2>
+      <form id="contact" @submit.prevent="sendMessage">
+        <input type="text" placeholder="Name" v-model="name">
+        <input type="text" placeholder="Email" v-model="email">
+        <input type="text" placeholder="Subject" v-model="subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
+        <div>
+          <button>Clear</button>
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+      <div class="externalLinks">
+        <a href="https://github.com/ErinHales" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/erin-hales-64122a15b/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linked in"></a>
+        <a href="https://codepen.io/mcbridee093/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="codepen"></a>
+        <a href="https://www.freecodecamp.org/fcc42d7bce8-1718-48bf-8f8f-4d568b10ef71" target="_blank"><img src="https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png" alt="free code camp"></a>
+      </div>
     </div>
     <router-view></router-view>
 </div>
 </template>
 
 <script>
-import Vue from "vue";
-import VueScrollTo from "vue-scrollto";
-// import nodemailer from 'nodemailer';
-Vue.use(VueScrollTo);
+import Vue from 'vue'
+import VueScrollTo from 'vue-scrollto'
+import axios from 'axios'
+Vue.use(VueScrollTo)
 
 export default {
-  name: "Home",
-  mounted() {
-    let scrollpos = window.scrollY;
-    const header = document.getElementsByClassName("nav")
+  name: 'Home',
+  data () {
+    return {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    }
+  },
+  mounted () {
+    let scrollpos = window.scrollY
+    const header = document.getElementsByClassName('nav')
 
-    if(header[0].classList) {
-        const add_class_on_scroll = () => header[0].classList.add("showNav")
-        const remove_class_on_scroll = () => header[0].classList.remove("showNav")
-        window.addEventListener('scroll', function() {
-            scrollpos = window.scrollY
-            if (scrollpos >= 200) {
-                add_class_on_scroll()
-            } else {
-                remove_class_on_scroll()
-            }
-        })
+    if (header[0].classList) {
+      const addClassOnScroll = () => header[0].classList.add('showNav')
+      const removeClassOnScroll = () =>
+        header[0].classList.remove('showNav')
+      window.addEventListener('scroll', function () {
+        scrollpos = window.scrollY
+        if (scrollpos >= 200) {
+          addClassOnScroll()
+        } else {
+          removeClassOnScroll()
+        }
+      })
     }
   },
   methods: {
     toggleNav: function () {
-        const nav = document.getElementsByClassName("nav")
-        if(nav[0].style.height !== "400px") {
-            nav[0].style.height = "400px"
-            nav[0].style.backgroundColor = "#F4B196"
-        } else {
-            nav[0].style.height = "70px"
-            nav[0].style.backgroundColor = "transparent"
-        }
+      const nav = document.getElementsByClassName('nav')
+      if (nav[0].style.height !== '400px') {
+        nav[0].style.height = '400px'
+        nav[0].style.backgroundColor = '#F4B196'
+      } else {
+        nav[0].style.height = '70px'
+        nav[0].style.backgroundColor = 'transparent'
+      }
     },
     closeNav: function () {
-        const nav = document.getElementsByClassName("nav");
-        nav[0].style.height = "70px"
+      const nav = document.getElementsByClassName('nav')
+      nav[0].style.height = '70px'
     },
     resetScroll: function () {
-        window.scrollTo(0,0)
+      window.scrollTo(0, 0)
+    },
+    sendMessage: function () {
+      axios
+        .put('/api/send', {
+          from: this.email,
+          subject: this.subject,
+          message: this.message
+        })
+        .then(console.log('Message Sent'))
     }
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -419,9 +455,9 @@ p {
 }
 
 .homeContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #home {
@@ -486,10 +522,14 @@ p {
   animation: bounce 2s infinite;
 }
 
-#about {
+.background {
   background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  top: 100vh;
+  /* margin-top: -100px; */
+}
+
+#about {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .blogs {
@@ -565,11 +605,12 @@ p {
 }
 
 #projects {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 50px;
+  padding: 200px 50px;
+  margin-top: 100vh;
 }
 
 .project {
@@ -623,12 +664,14 @@ form input {
   border-bottom: 3px solid gray;
   margin: 20px;
   font-size: 40px;
+  outline: none;
 }
 
 textarea {
   width: 60%;
   background-color: transparent;
   font-size: 30px;
+  outline: none;
 }
 
 form button {
@@ -641,10 +684,16 @@ form button {
 }
 
 #projectsHeader,
-.contactText {
+#contactText {
   font-size: 40px;
   text-align: center;
   margin-top: 100px;
+}
+
+#projectsHeader {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
 }
 
 #arrowImg {
@@ -666,7 +715,6 @@ form button {
 .externalLinks img:hover {
   cursor: pointer;
 }
-
 
 @keyframes bounce {
   70% {
@@ -758,7 +806,6 @@ form button {
   .project {
     width: 300px;
   }
-  
 }
 
 @media (max-width: 540px) {

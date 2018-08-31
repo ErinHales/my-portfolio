@@ -13,7 +13,7 @@
 
             </div>
             <div class="card">
-            
+
             </div>
             <div class="card">
 
@@ -40,13 +40,13 @@
 
 <script>
 export default {
-  name: "Ozzy",
-  data() {
+  name: 'Ozzy',
+  data () {
     return {
-      msg: "Ozzy Component"
-    };
+      msg: 'Ozzy Component'
+    }
   }
-};
+}
 </script>
 
 <style>

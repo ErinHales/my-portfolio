@@ -22,11 +22,11 @@
 
 <script>
 export default {
-  name: "Journey",
+  name: 'Journey',
   mounted () {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
   }
-};
+}
 </script>
 
 <style>
