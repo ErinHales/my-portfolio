@@ -18,8 +18,8 @@ let transporter = nodemailer.createTransport({
     // }
     // service: 'Gmail',
     auth: {
-        user: "apikey",
-        pass: "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"
+        user: process.env.USERNAME,
+        pass: process.env.PASSWORD
     }
 })
 
