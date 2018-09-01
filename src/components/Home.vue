@@ -132,6 +132,8 @@
       </div>
     </div>
     <div class="background">
+      <h2 id="aboutText">About</h2>
+    <div class="display-bottom">
       <div id="about">
         <!-- <img src="http://i67.tinypic.com/1o0upf.jpg" alt=""> -->
         <div class="blogs">
@@ -164,7 +166,7 @@
         <textarea name="" id="" cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
         <div>
           <button>Clear</button>
-          <input type="submit" value="Send" />
+          <button type="submit">Send</button>
         </div>
       </form>
       <div class="externalLinks">
@@ -173,6 +175,7 @@
         <a href="https://codepen.io/mcbridee093/" target="_blank"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" alt="codepen"></a>
         <a href="https://www.freecodecamp.org/fcc42d7bce8-1718-48bf-8f8f-4d568b10ef71" target="_blank"><img src="https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png" alt="free code camp"></a>
       </div>
+    </div>
     </div>
     <router-view></router-view>
 </div>
@@ -231,13 +234,11 @@ export default {
       window.scrollTo(0, 0)
     },
     sendMessage: function () {
-      axios
-        .put('/api/send', {
-          from: this.email,
-          subject: this.subject,
-          message: this.message
-        })
-        .then(console.log('Message Sent'))
+      axios.put('/api/send', {
+        from: this.email,
+        subject: this.subject,
+        message: this.message
+      }).then(console.log('Message Sent')).catch(err => console.log(err))
     }
   }
 }
@@ -245,7 +246,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* right coral = F4B196
+/* coral = F4B196
 dark blue = 076982*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -528,7 +529,6 @@ p {
 }
 
 #about {
-  padding-top: 100px;
   padding-bottom: 50px;
 }
 
@@ -536,7 +536,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-bottom: 100px;
   width: 99vw;
 }
@@ -688,6 +688,12 @@ form button {
   font-size: 40px;
   text-align: center;
   margin-top: 100px;
+}
+
+#aboutText {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 200px;
 }
 
 #projectsHeader {
