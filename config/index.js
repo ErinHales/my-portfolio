@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/': {
-        target: 'http://localhost:5000',
+        target: 'https://www.erin-hales.com',
         changeOrigin: true,
       }
     },

@@ -6,7 +6,7 @@ require("dotenv").config();
 const app = express();
 app.use(bodyParser.json());
 
-let {USERNAME, PASSWORD, SERVER_PORT, GMAIL_USER, GMAIL_PASS} = process.env;
+let {SERVER_PORT, GMAIL_USER, GMAIL_PASS} = process.env;
 
 app.use(express.static(`${__dirname}/../dist`));
 
