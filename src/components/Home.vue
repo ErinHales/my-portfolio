@@ -165,7 +165,7 @@
         <input type="text" placeholder="Subject" v-model="subject">
         <textarea name="" id="" cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
         <div>
-          <button>Clear</button>
+          <button @click="clear">Clear</button>
           <button type="submit">Send</button>
         </div>
       </form>
@@ -239,6 +239,16 @@ export default {
         subject: this.subject,
         message: this.message
       }).then(console.log('Message Sent')).catch(err => console.log(err))
+      this.name = ''
+      this.email = ''
+      this.subject = ''
+      this.message = ''
+    },
+    clear: function () {
+      this.name = ''
+      this.email = ''
+      this.subject = ''
+      this.message = ''
     }
   }
 }

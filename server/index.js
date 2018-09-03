@@ -1,30 +1,24 @@
-const express = require("express")
-const bodyParser = require("body-parser")
-const nodemailer = require("nodemailer")
-require("dotenv").config()
+const express = require("express");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
+require("dotenv").config();
 
-const app = express()
-app.use(bodyParser.json())
+const app = express();
+app.use(bodyParser.json());
 
-app.use(express.static(`${__dirname}/../dist`))
+let {USERNAME, PASSWORD, SERVER_PORT, GMAIL_USER, GMAIL_PASS} = process.env;
+
+app.use(express.static(`${__dirname}/../dist`));
 
 let transporter = nodemailer.createTransport({
-    // host: "smtp.mailtrap.io",
-    host: "smtp.sendgrid.net",
-    port: 587,
-    // auth: {
-    //     user: "f04defa62b0554",
-    //     pass: "c9182f392c4db0"
-    // }
-    // service: 'Gmail',
+    service: 'Gmail',
     auth: {
-        user: process.env.USERNAME,
-        pass: process.env.PASSWORD
+        user: GMAIL_USER,
+        pass: GMAIL_PASS
     }
 })
 
 app.put('/api/send', (req, res) => {
-    console.log("Hello")
     console.log(req.body)
     var mailOptions = {
         from: req.body.from,
@@ -33,12 +27,15 @@ app.put('/api/send', (req, res) => {
         text: req.body.message
     }
     transporter.sendMail(mailOptions, function (err, info) {
-        if (err) console.log(err)
-        else console.log(info)
+        if (err) {
+            console.log(err)
+        } else {
+            console.log(info)
+        }
     })
 })
 
-const port = process.env.SERVER_PORT;
+const port = SERVER_PORT;
 
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
