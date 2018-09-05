@@ -158,7 +158,7 @@
           </router-link>
         </div>
       </div>
-      <h2 id="contactText">Let's get in touch.</h2>
+      <!-- <h2 id="contactText">Let's get in touch.</h2>
       <form id="contact" @submit.prevent="sendMessage">
         <input type="text" placeholder="Name" v-model="name">
         <input type="text" placeholder="Email" v-model="email">
@@ -168,7 +168,7 @@
           <button @click="clear">Clear</button>
           <button type="submit">Send</button>
         </div>
-      </form>
+      </form> -->
       <div class="externalLinks">
         <a href="https://github.com/ErinHales" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="github"></a>
         <a href="https://www.linkedin.com/in/erin-hales-64122a15b/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="linked in"></a>
